@@ -1,5 +1,8 @@
-const express = require('express')
-const products = require('./data/products')
+// const express = require('express')
+// const products = require('./data/products')
+
+import express from 'express'
+import products from './data/products'
 
 //create instance of express
 const app = express()

@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react'
+import axios from 'axios'
 // import products from '../products'
 import Product from '../components/Product'
 import {Col, Row} from 'react-bootstrap'
-import axios from 'axios'
 
 const HomeScreen = () => {
 
@@ -22,7 +22,8 @@ const HomeScreen = () => {
     <h1> Latest Products </h1>
     <Row>
       {products.map(p => (     //add in { }if more than 1 line code
-        <Col sm={12} md={6} lg={4} xl={3}><Product product={p}/></Col>
+        <Col sm={12} md={6} lg={4} xl={3}>
+          <Product product={p}/></Col>
       ))
       }
     </Row>
